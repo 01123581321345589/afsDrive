@@ -97,7 +97,6 @@ int main(int argc, char *argv[]){
     cursor = hTree;
     strcpy(fname, argv[1]);
     fname[strlen(fname)-4]='\0';
-    fname[0]='N';
     op = fopen(fname, "wb");
     while(fread(bus, sizeof(int), 8, fd)/8){
         for(i=0;i<32*8;i++){
