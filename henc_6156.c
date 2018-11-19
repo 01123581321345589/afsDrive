@@ -1,3 +1,4 @@
+/* Weiming He   cs610 6156 prp */
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -151,7 +152,7 @@ int feed(unsigned int *bus, unsigned int *data, int i, FILE *op){
         for(j=0;j<8;j++)
             bus[j] |= copy[j];
         l -= 256;
-        printf("%8x,%8x,%8x,%8x,%8x,%8x,%8x,%8x-* r%d\n",copy[0],copy[1],copy[2],copy[3],copy[4],copy[5],copy[6],copy[7],l);
+        //printf("%8x,%8x,%8x,%8x,%8x,%8x,%8x,%8x-* r%d\n",copy[0],copy[1],copy[2],copy[3],copy[4],copy[5],copy[6],copy[7],l);
     }
     return l;
 }
